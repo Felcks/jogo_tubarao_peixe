@@ -1,9 +1,22 @@
 #include <iostream>
+#include <string>
+#include <sstream>
 using namespace std;
 
-// main() is where program execution begins.
+class Agente {
+	int x;
+	int y;
+	int vida;
+	public:
+		Agente(int a, int b, int c){ x = a; y = b; vida = c; }
+};
+
+class Peixe : public Agente {
+	public:
+		Peixe(int a, int b, int c) : Agente(a, b, c);
+};
 
 int main() {
-   cout << "This is my first C++ program"; // prints Hello World
-   return 0;
+
+	return 0;
 }
